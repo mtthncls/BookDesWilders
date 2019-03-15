@@ -150,20 +150,20 @@ for (i = 0; i < wilders.length; i++){
                         <a href="${wilders[i].linkedinLink}"
                             target="_blank">
                             <img class="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
-                                alt="Responsive image"></a>
+                                src="https://i.imgur.com/JFjk02U.png"
+                                alt="Logo LinkedIn"></a>
                     </div>
                     <div class="col imagebox">
                         <a href="${wilders[i].githubLink}" target="_blank">
                             <img class="img-fluid rounded-circle"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
-                                alt="Responsive image"></a>
+                                src="https://i.imgur.com/f46V8rb.png"
+                                alt="logo GitHub"></a>
                     </div>
                     <div class="col imagebox">
                         <a href="${wilders[i].emailLink}" target="_blank">
                             <img class="img-fluid"
-                                src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
-                                alt="Responsive image"></a>
+                                src="https://i.imgur.com/gKdLQvr.png"
+                                alt="Logo enveloppe"></a>
                     </div>
                 </div>
             </div>
