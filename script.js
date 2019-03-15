@@ -99,3 +99,26 @@ const leaders = [
         emailLink : "clement@wildcodeschool.fr"
     }
 ]
+console.log(wilders[0])
+console.log(wilders[1])
+console.log(wilders[2])
+
+//Get the element with wilders id
+const wildersElem = document.getElementById('wilders')
+console.log(wildersElem)
+//Define loop for wilders cards
+let card = ""
+for (i = 0; i < wilders.length; i++){
+    console.log(`${wilders[i].firstName} ${wilders[i].familyName} ${wilders[i].profilePic}`);
+    card += ` <article class="col-12 col-md-4 col-lg-3"><div>
+            <img src="${wilders[i].profilePic}" class="card-img-top rounded-circle test modimg"
+                alt="photo ${wilders[i].firstName} ${wilders[i].familyName}">
+        </div>
+        <div class="card-body border-0">
+            <h5 class="card-title font-weight-bold">${wilders[i].firstName} <br />${wilders[i].familyName}</h5>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${wilders[i].firstName}${wilders[i].familyName}Modal">Voir le
+                profil</a>
+        </div></article>` 
+    }
+console.log("card", card)
+wildersElem.innerHTML = card;
