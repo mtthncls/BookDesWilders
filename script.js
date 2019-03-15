@@ -110,7 +110,7 @@ console.log(wildersElem)
 let card = ""
 for (i = 0; i < wilders.length; i++){
     console.log(`${wilders[i].firstName} ${wilders[i].familyName} ${wilders[i].profilePic}`);
-    card += ` <article class="col-12 col-md-4 col-lg-3"><div>
+    card += ` <article class="col-12 col-md-4"><div>
             <img src="${wilders[i].profilePic}" class="card-img-top rounded-circle test modimg"
                 alt="photo ${wilders[i].firstName} ${wilders[i].familyName}">
         </div>

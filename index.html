@@ -1,114 +1,311 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Le book des Wilders</title>
 </head>
+
 <body>
-        <div class="container">
-                <h2 class="text-center intertitre">La Wild Code School</h2>
-                <hr>
-                <p class="presentation text-justify"><a class="wcs" href="https://wildcodeschool.fr/" target="_blank">La Wild Code School</a> est un réseau d'écoles
-                    proposant des formations courte
-                    et professionnalisante. Elle
-                    permet d'accéder à des métiers numériques d'avenir: développeur web ou mobile, data analyst, ou encore
-                    product manager. Elle est présente dans 13 campus en France et 4 campus en Europe.</p>
-                <p class="presentation text-justify">Cette page vous fera découvrir la promotion Javascript Février 2019 de
-                    Reims. </p>
-                <hr>
-                <section id="wilders" class="text-center">
-                    <h2 class="intertitre">Les Wilders - Promo "Les Décodeurs" JS Février 2019</h2>
-                    <div class="ligne1 row no-gutters justify-content-between">
-    <article class="col-12 col-md-4 col-lg-3 offset-lg-2" style="width: 18rem;">
-        <div class="modal fade" id="SebastienJModal" tabindex="-1" role="dialog"
-            aria-labelledby="SebastienJModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-center w-100" id="SebastienJModalLabel">Sébastien JOLLY
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+    <header>
+        <div class="jumbotron jumbotron-fluid header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <a href="https://wildcodeschool.fr/" target="_blank"><img
+                                src="https://avatars3.githubusercontent.com/u/8874047?s=200&v=4"
+                                alt="Logo Wild Code School" /></a>
                     </div>
-                    <div class="modale">
-                        <div class="modal-body row justify-content-center align-items-center">
-                            <div class="col-12 col-md-6">
-                                <img class="w-100 rounded-circle modimg"
-                                    src="https://i.imgur.com/d3O4XBt.jpg" alt="photo Sébastien">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <p class="souligne">Quelques mots de notre wilder</p>
-                                <p class="text-justify">Désireux d'en apprendre plus sur le développement
-                                    web/mobile, j'ai décidé de me réorienter professionnellement et ainsi
-                                    pouvoir en faire mon futur métier.</p>
-                                <div>
-                                    <p class="souligne">Langages de programmation</p>
-                                    <p>Javascript React HTML5.0 CSS3.0</p>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <h1 class="display-4">Wild Code School</h1>
+                        <p class="lead">Promotion Javascript Reims - Février 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="text-center intertitre">La Wild Code School</h2>
+        <hr>
+        <p class="presentation text-justify"><a class="wcs" href="https://wildcodeschool.fr/" target="_blank">La Wild Code School</a> est un réseau d'écoles
+            proposant des formations courte
+            et professionnalisante. Elle
+            permet d'accéder à des métiers numériques d'avenir: développeur web ou mobile, data analyst, ou encore
+            product manager. Elle est présente dans 13 campus en France et 4 campus en Europe.</p>
+        <p class="presentation text-justify">Cette page vous fera découvrir la promotion Javascript Février 2019 de
+            Reims. </p>
+        <hr>
+        <section class="text-center">
+            <h2 class="intertitre">Les Wilders - Promo "Les Décodeurs" JS Février 2019</h2>
+            <div id="wilders" class="ligne1 row no-gutters justify-content-around">
+                
+            </div>
+        </section>
+        <section class="recrute">
+            <div class="row justify-content-center">
+                
+                        <a class="btn btn-outline-primary bouton" href="https://wild-code-school.jobteaser.com/fr/recruiter_account/sign_in?back_to_after_login=%2Ffr%2Frecruiter_account%2Fjob_offers" role="button">Vous avez une offre de stage ? <br>Cliquez ici
+                            !</a>
+            </div>
+        </section>
+        <hr>
+        <section id="team" class="text-center">
+            <h2 class="intertitre">La team - Formateurs et Campus Manager</h2>
+            <div class="ligne1 row no-gutters justify-content-around">
+                <article class="col-12 col-md-4 col-lg-3">
+                    <div class="modal fade" id="ThomasCModal" tabindex="-1" role="dialog"
+                        aria-labelledby="ThomasCModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center w-100" id="ThomasCModalLabel">Thomas CULDAUT</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                                <div>
-                                    <p class="souligne">Soft Skills</p>
-                                    <p>Résolution des problemes - Travail en équipe - Motivation</p>
+                                <div class="modale">
+                                    <div class="modal-body row justify-content-center align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <img class="w-100 rounded-circle modimg"
+                                                src="https://i.imgur.com/X4fMCZD.jpg" alt="photo Thomas">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div>
+                                                <p class="souligne">Son parcours</p>
+                                                <p>Après des études en informatique, Thomas a tout de suite lié la
+                                                    pratique du développement et de la pédagogie dans le monde de la
+                                                    formation professionnelle en France et au Cameroun. Après une
+                                                    expérience dans une startup parisienne, il rejoint l'équipe
+                                                    pédagogique de la WildCodeSchool, où il coordonne aujourd'hui les
+                                                    formations JS de tous les campus.</p>
+                                            </div>
+                                            <div>
+                                                <p class="souligne">Une anecdote</p>
+                                                <p>Thomas aime beaucoup de choses, des mangas aux jeux de rôles sur
+                                                    plateau, mais pas répondre aux questionnaires sur son parcours ;)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="souligne">Mobilité professionnelle</p>
-                                    <p>Everywhere</p>
+                                <div class="container">
+                                    <div class="modal-footer justify-content-center">
+                                        <div class="col imagebox">
+                                            <a href="https://www.linkedin.com/in/thomas-culdaut-76ba593/"
+                                                target="_blank">
+                                                <img class="img-fluid rounded-circle"
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                        <div class="col imagebox">
+                                            <a href="thomas@wildcodeschool.fr" target="_blank">
+                                                <img class="img-fluid"
+                                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="modal-footer justify-content-center">
-                            <div class="col imagebox">
-                                <a href="https://www.linkedin.com/in/s%C3%A9bastien-jolly-b48b71115/"
-                                    target="_blank">
-                                    <img class="img-fluid rounded-circle"
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
-                                        alt="Responsive image"></a>
+                    <div>
+                        <img src="https://i.imgur.com/X4fMCZD.jpg" class="card-img-top rounded-circle test modimg"
+                            alt="photo Thomas">
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="card-title font-weight-bold">Thomas <br />CULDAUT</h5>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ThomasCModal">Voir le
+                            profil</a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-4 col-lg-3">
+                    <div class="modal fade" id="EtienneRModal" tabindex="-1" role="dialog"
+                        aria-labelledby="EtienneRModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center w-100" id="EtienneRModalLabel">Etienne RABIN</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modale">
+                                    <div class="modal-body row justify-content-center align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <img class="w-100 rounded-circle modimg"
+                                                src="https://i.imgur.com/vnDmgSe.jpg" alt="photo Etienne">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div>
+                                                <p class="souligne">Son parcours</p>
+                                                <p>Sa passion pour le dessin l'a naturellement amené à faire des études
+                                                    de graphisme. Mais sa nature curieuse et sa volonté d'élargir ses
+                                                    champs de création l'ont amené à rejoindre la WildCodeSchool,
+                                                    d'abord comme élève puis aujourd'hui comme formateur.</p>
+                                            </div>
+                                            <div>
+                                                <p class="souligne">Une anecdote</p>
+                                                <p>Ne prononcez pas les mots "PSG" et "Remontada" devant lui !</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="modal-footer justify-content-center">
+                                        <div class="col imagebox">
+                                            <a href="https://www.linkedin.com/in/etienne-rabin/" target="_blank">
+                                                <img class="img-fluid rounded-circle"
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                        <div class="col imagebox">
+                                            <a href="etienne@wildcodeschool.fr" target="_blank">
+                                                <img class="img-fluid"
+                                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col imagebox">
-                                <a href="https://github.com/seb879" target="_blank">
-                                    <img class="img-fluid rounded-circle"
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
-                                        alt="Responsive image"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://i.imgur.com/vnDmgSe.jpg" class="card-img-top rounded-circle test modimg"
+                            alt="photo Etienne">
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="card-title font-weight-bold">Etienne <br />RABIN</h5>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#EtienneRModal">Voir le
+                            profil</a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-4 col-lg-3">
+                    <div class="modal fade" id="ClementBModal" tabindex="-1" role="dialog"
+                        aria-labelledby="ClementBModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center w-100" id="ClementBModalLabel">Clément
+                                        BECHETOILLE</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modale">
+                                    <div class="modal-body row justify-content-center align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <img class="w-100 rounded-circle modimg"
+                                                src="https://i.imgur.com/iFpWFRB.jpg" alt="photo Clément">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div>
+                                                <p class="souligne">Son parcours</p>
+                                                <p>Après des fonctions marketing dans l’édition et les objets éducatifs,
+                                                    Clément s'est engagé dans l’enseignement supérieur au Vietnam puis
+                                                    en France (insertion professionnelle, développement personnel et
+                                                    recrutement innovant). Basé à Reims depuis quelques années, il
+                                                    s’implique dans les initiatives locales, notamment l’organisation de
+                                                    l'édition rémoise de TEDx. Passionné par les nouvelles approches
+                                                    pédagogiques, il a rejoint la Wild Code School comme Campus Manager
+                                                    en janvier 2018.</p>
+                                            </div>
+                                            <div>
+                                                <p class="souligne">Une anecdote</p>
+                                                <p>Clément à pour passion d'aller à la découverte des cultures du monde,
+                                                    et surtout de tout ce qui se mange !</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="modal-footer justify-content-center">
+                                        <div class="col imagebox">
+                                            <a href="https://www.linkedin.com/in/clementbechetoille/" target="_blank">
+                                                <img class="img-fluid rounded-circle"
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                        <div class="col imagebox">
+                                            <a href="clement@wildcodeschool.fr" target="_blank">
+                                                <img class="img-fluid"
+                                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
+                                                    alt="Responsive image"></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col imagebox">
-                                <a href="seb_879@hotmail.fr" target="_blank">
-                                    <img class="img-fluid"
-                                        src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
-                                        alt="Responsive image"></a>
-                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://i.imgur.com/iFpWFRB.jpg" class="card-img-top rounded-circle test modimg"
+                            alt="photo Clément">
+                    </div>
+                    <div class="card-body border-0">
+                        <h5 class="card-title font-weight-bold">Clément <br />BECHETOILLE</h5>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ClementBModal">Voir le
+                            profil</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="card text-center">
+            <h3 class="contact">Contact</h3>
+
+            <div class="card-body">
+                <p class="card-text">Clément BECHETOILLE, Campus Manager de REIMS</p>
+                <p class="card-text">clement@wildcodeschool.fr</p>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col imagebox">
+                            <a href="https://wildcodeschool.fr/" target="_blank">
+                                <img class="img-fluid rounded-circle"
+                                    src="https://pbs.twimg.com/profile_images/1083713943938453505/CZG3c8mK_400x400.jpg"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col imagebox">
+                            <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=fr"
+                                target="_blank">
+                                <img class="img-fluid rounded-circle"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col imagebox">
+                            <a href="https://www.facebook.com/wildcodeschool/" target="_blank">
+                                <img class="img-fluid rounded-circle"
+                                    src="http://school.streetpress.com/wp-content/uploads/2017/06/logo-facebook-1024x1024.png"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col imagebox">
+                            <a href="https://www.instagram.com/wildcodeschool/?hl=fr" target="_blank">
+                                <img class="img-fluid rounded-circle"
+                                    src="https://www.pingflow.com/wp-content/uploads/2017/06/instagram-logo.png"
+                                    alt="Responsive image"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="https://i.imgur.com/d3O4XBt.jpg" class="card-img-top rounded-circle test modimg"
-                alt="photo Sébastien">
-        </div>
-        <div class="card-body border-0">
-            <h5 class="card-title font-weight-bold">Sébastien <br />JOLLY</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#SebastienJModal">Voir le
-                profil</a>
-        </div>
-    </article>
-    </div>
-    </section>
-    </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    <script src=script.js></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
