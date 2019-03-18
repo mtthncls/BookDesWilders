@@ -1,70 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
-body
-{
+body {
     background-color: #cfcfd1;
     font-family: 'Varela Round', sans-serif;
 }
 
-section
-{
+section {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.header
-{
-justify-content: center;
-font-family: 'Varela Round', sans-serif;
+.header {
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
 }
 
-.display-4
-{
-margin-top: 35px;
-color: #EC6D6A;
+.display-4 {
+    margin-top: 35px;
+    color: #EC6D6A;
 }
 
-.lead
-{
-margin-top: 30px;
-color: #EC6D6A;
+.lead {
+    margin-top: 30px;
+    color: #EC6D6A;
 }
 
-.intertitre
-{
-    padding:10px;
+.intertitre {
+    padding: 10px;
     font-size: 2.8em;
 }
 
-.souligne
-{
-    font-weight:bold;
+.souligne {
+    font-weight: bold;
     text-decoration: underline;
     padding-top: 10px;
 }
 
-.modal-header
-{
+.modal-header {
     background-color: #FF8A8E;
 }
-.modal-title
-{
+
+.modal-title {
     font-size: 2.6em;
     color: white;
 }
 
-.modimg
-{
+.modimg {
     border: solid 3px #FF8A8E;
 }
-.modale
-{
+
+.modale {
     padding: 10px;
 }
 
-.bouton
-{
-   
+.bouton {
+
     color: #FF8A8E;
     border-radius: 5px;
     background-color: #F2EFEF;
@@ -72,21 +62,18 @@ color: #EC6D6A;
     font-size: 2em;
 }
 
-.bouton a
-{
+.bouton a {
     text-decoration: none;
     color: #FF8A8E;
-    font-size:2em;
+    font-size: 2em;
 }
 
-.bouton a:hover
-{
+.bouton a:hover {
     text-decoration: none;
     color: #FF8A8E;
 }
 
-.bouton:hover
-{
+.bouton:hover {
     color: #FF8A8E;
     border-radius: 5px;
     background-color: #F2EFEF;
@@ -96,62 +83,53 @@ color: #EC6D6A;
 
 
 
-footer
-{
-margin-top: 30px;
-font-family: 'Varela Round', sans-serif;
+footer {
+    margin-top: 30px;
+    font-family: 'Varela Round', sans-serif;
 
 }
 
-.contact
-{
-padding-top: 15px;
+.contact {
+    padding-top: 15px;
 }
 
-.card
-{
-background-color: #E9ECEF;
+.card {
+    background-color: #E9ECEF;
 }
 
-.jumbotron
-{
+.jumbotron {
     background-color: #76797c;
- 
+
 }
 
-.btn-primary
-{
+.btn-primary {
     background-color: #FF8A8E;
     border: none;
     font-size: 1.4em;
 }
-.btn-primary:hover
-{
-background-color: #f7a5ab;
-border: none;
+
+.btn-primary:hover {
+    background-color: #f7a5ab;
+    border: none;
 }
-.imagebox
-{
+
+.imagebox {
     max-width: 110px;
 }
 
-.test
-{
+.test {
     max-width: 80%;
 }
 
-.wcs
-{
+.wcs {
     color: #FF5A5C;
 }
 
-.wcs:hover
-{
+.wcs:hover {
     text-decoration: none;
     color: #FF8A8E;
 }
 
-.logomodal
-{
+.logomodal {
     max-width: 110px;
 }
