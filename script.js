@@ -3,7 +3,7 @@ console.log("test fonctionnement js");
 const wilders = [{
         firstName: "Axel",
         familyName: "CHANDELIER",
-        profilePic: "https://i.imgur.com/dsKXOVX.jpg",
+        profilePic: "https://i.imgur.com/M3Who57.png",
         fewWords: "Développeur en formation, je suis courtois, travailleur et ponctuel. Je recherche un stage afin de compléter ma formation.",
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Travail d'équipe - Autonomie - Ponctualité.",
@@ -16,7 +16,7 @@ const wilders = [{
     {
         firstName: "Grégoire",
         familyName: "SURAY",
-        profilePic: "https://i.imgur.com/5QztU6i.jpg",
+        profilePic: "https://i.imgur.com/csYQ0pa.png",
         fewWords: "Avec un background de 5 ans en management et gestion, j'ai décidé de me réorienter vers le Web. Curieux et déterminé, je me donne toujours à 100% dans ce que j'entreprends.",
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Aime travailler en équipe, rigoureux et organisé.",
@@ -29,7 +29,7 @@ const wilders = [{
     {
         firstName: "Jeremy",
         familyName: "FIGUEIREDO",
-        profilePic: "https://i.imgur.com/mWFYFPF.jpg",
+        profilePic: "https://i.imgur.com/DrhiIyK.png",
         fewWords: "Après huit ans d'expériences dans le Tourisme, j'ai décidé de me reconvertir afin que mon intérêt pour le web développement devienne mon métier.",
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Gestion de Projet, Autonomie, Curiosité.",
@@ -42,7 +42,7 @@ const wilders = [{
     {
         firstName: "Matthieu",
         familyName: "NICOLAS",
-        profilePic: "https://i.imgur.com/Z7ekieC.jpg",
+        profilePic: "https://i.imgur.com/zRSo9X9.png",
         fewWords: "Après une première vie de contrôleur de gestion, j'ai rejoint les rangs de la Wild Code School pour me reconvertir dans le développement web. Je suis 100% motivé pour réussir cette nouvelle étape professionnelle dans un domaine qui me passionne.",
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Organisation - Ecoute - Rigueur.",
@@ -55,7 +55,7 @@ const wilders = [{
     {
         firstName: "Sébastien",
         familyName: "JOLLY",
-        profilePic: "https://i.imgur.com/d3O4XBt.jpg",
+        profilePic: "https://i.imgur.com/MLmuFxn.png",
         fewWords: "Désireux d'en apprendre plus sur le développement web/mobile, j'ai décidé de me réorienter professionnellement et ainsi pouvoir en faire mon futur métier.",
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Résolution des problemes - Travail en équipe - Motivation",
@@ -70,7 +70,7 @@ const wilders = [{
 const teachers = [{
         firstName: "Thomas",
         familyName: "CULDAUT",
-        profilePic: "https://i.imgur.com/X4fMCZD.jpg",
+        profilePic: "https://i.imgur.com/CgNFFqi.png",
         career: "Après des études en informatique, Thomas a tout de suite lié la pratique du développement et de la pédagogie dans le monde de la formation professionnelle en France et au Cameroun. Après une expérience dans une startup parisienne, il rejoint l'équipe pédagogique de la WildCodeSchool, où il coordonne aujourd'hui les formations JS de tous les campus.",
         about: "Thomas aime beaucoup de choses, des mangas aux jeux de rôles sur plateau, mais pas répondre aux questionnaires sur son parcours ;)",
         linkedinLink: "https://www.linkedin.com/in/thomas-culdaut-76ba593/",
@@ -80,7 +80,7 @@ const teachers = [{
     {
         firstName: "Etienne",
         familyName: "RABIN",
-        profilePic: "https://i.imgur.com/vnDmgSe.jpg",
+        profilePic: "https://i.imgur.com/DdN2Su4.png",
         career: "Sa passion pour le dessin l'a naturellement amené à faire des études de graphisme. Mais sa nature curieuse et sa volonté d'élargir ses champs de création l'ont amené à rejoindre la WildCodeSchool, d'abord comme élève puis aujourd'hui comme formateur.",
         about: "Ne prononcez pas les mots \"PSG\" et \"Remontada\" devant lui !",
         linkedinLink: "https://www.linkedin.com/in/etienne-rabin/",
@@ -90,7 +90,7 @@ const teachers = [{
     {
         firstName: "Clément",
         familyName: "BECHETOILLE",
-        profilePic: "https://i.imgur.com/iFpWFRB.jpg",
+        profilePic: "https://i.imgur.com/erXJsNE.png",
         career: "Après des fonctions marketing dans l’édition et les objets éducatifs, Clément s'est engagé dans l’enseignement supérieur au Vietnam puis en France (insertion professionnelle, développement personnel et recrutement innovant). Basé à Reims depuis quelques années, il s’implique dans les initiatives locales, notamment l’organisation de l'édition rémoise de TEDx. Passionné par les nouvelles approches pédagogiques, il a rejoint la Wild Code School comme Campus Manager en janvier 2018.",
         about: "Clément à pour passion d'aller à la découverte des cultures du monde, et surtout de tout ce qui se mange !",
         linkedinLink: "https://www.linkedin.com/in/clementbechetoille/",
@@ -177,6 +177,75 @@ const peoplesWildersCard = (peoplesType, peoplesArray) => {
     peoplesWildersElem.innerHTML = cardWildersPeoples;
 }
 
+const peopleTeachersCard = (peoplesType, peoplesArray) => {
+    //Get the element with teachers id
+    const teachersElem = document.getElementById('teachers')
+    //Define loop for teachers cards
+    let cardTeachers = ""
+    for (i = 0; i < teachers.length; i++) {
+        cardTeachers += `<article class="col-12 col-md-4">
+    <div class="modal fade" id="${teachers[i].firstName}${teachers[i].familyName}Modal" tabindex="-1" role="dialog"
+        aria-labelledby="${teachers[i].firstName}${teachers[i].familyName}ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="${teachers[i].firstName}${teachers[i].familyName}ModalLabel">${teachers[i].firstName} ${teachers[i].familyName}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modale">
+                    <div class="modal-body row justify-content-center align-items-center">
+                        <div class="col-12 col-md-6">
+                            <img class="w-100 rounded-circle modimg"
+                                src="${teachers[i].profilePic}" alt="photo ${teachers[i].firstName} ${teachers[i].familyName}">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div>
+                                <p class="souligne">Son parcours</p>
+                                <p>${teachers[i].career}</p>
+                            </div>
+                            <div>
+                                <p class="souligne">Une anecdote</p>
+                                <p>${teachers[i].about}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="modal-footer justify-content-center">
+                        <div class="col imagebox">
+                            <a href="${teachers[i].linkedinLink}"
+                                target="_blank">
+                                <img class="img-fluid rounded-circle"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
+                                    alt="Responsive image"></a>
+                        </div>
+                        <div class="col imagebox">
+                            <a href="${teachers[i].emailLink}" target="_blank">
+                                <img class="img-fluid"
+                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
+                                    alt="Responsive image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="${teachers[i].profilePic}" class="card-img-top rounded-circle test modimg"
+            alt="${teachers[i].firstName} ${teachers[i].familyName}">
+    </div>
+    <div class="card-body border-0">
+        <h5 class="card-title font-weight-bold">${teachers[i].firstName} <br />${teachers[i].familyName}</h5>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${teachers[i].firstName}${teachers[i].familyName}Modal">Voir le
+            profil</a>
+    </div>
+</article>`
+    }
+    teachersElem.innerHTML = cardTeachers;
+}
 
 /*
 //Get the element with wilders id
@@ -254,9 +323,7 @@ for (i = 0; i < wilders.length; i++){
         </div></article>` 
     }
 
-wildersElem.innerHTML = cardWilders;*/
-
-peoplesWildersCard('wilders', wilders)
+wildersElem.innerHTML = cardWilders;
 
 //Get the element with teachers id
 const teachersElem = document.getElementById('teachers')
@@ -325,3 +392,7 @@ for (i = 0; i < teachers.length; i++) {
 </article>`
 }
 teachersElem.innerHTML = cardTeachers;
+*/
+
+peoplesWildersCard('wilders', wilders)
+peopleTeachersCard('teachers', teachers)
