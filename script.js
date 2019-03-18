@@ -148,14 +148,14 @@ const peoplesWildersCard = (peoplesType, peoplesArray) => {
                                     src="https://i.imgur.com/JFjk02U.png"
                                     alt="Logo LinkedIn"></a>
                         </div>
-                        <div class="col imagebox">
+                        <div class="col imagebox">                            
                             <a href="${peoplesArray[i].githubLink}" target="_blank">
                                 <img class="img-fluid rounded-circle"
                                     src="https://i.imgur.com/f46V8rb.png"
                                     alt="logo GitHub"></a>
                         </div>
-                        <div class="col imagebox">
-                            <a href="${peoplesArray[i].emailLink}" target="_blank">
+                        <div class="col imagebox envelope">
+                        <input class="emailaddress" value="${peoplesArray[i].emailLink}" style="display: none;">
                                 <img class="img-fluid"
                                     src="https://i.imgur.com/gKdLQvr.png"
                                     alt="Logo enveloppe"></a>
@@ -184,12 +184,12 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
     let cardTeachers = ""
     for (i = 0; i < teachers.length; i++) {
         cardTeachers += `<article class="col-12 col-md-4">
-    <div class="modal fade" id="${teachers[i].firstName}${teachers[i].familyName}Modal" tabindex="-1" role="dialog"
-        aria-labelledby="${teachers[i].firstName}${teachers[i].familyName}ModalLabel" aria-hidden="true">
+    <div class="modal fade" id="${peoplesArray[i].firstName}${peoplesArray[i].familyName}Modal" tabindex="-1" role="dialog"
+        aria-labelledby="${peoplesArray[i].firstName}${peoplesArray[i].familyName}ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center w-100" id="${teachers[i].firstName}${teachers[i].familyName}ModalLabel">${teachers[i].firstName} ${teachers[i].familyName}</h5>
+                    <h5 class="modal-title text-center w-100" id="${peoplesArray[i].firstName}${peoplesArray[i].familyName}ModalLabel">${peoplesArray[i].firstName} ${peoplesArray[i].familyName}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -198,16 +198,16 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                     <div class="modal-body row justify-content-center align-items-center">
                         <div class="col-12 col-md-6">
                             <img class="w-100 rounded-circle modimg"
-                                src="${teachers[i].profilePic}" alt="photo ${teachers[i].firstName} ${teachers[i].familyName}">
+                                src="${peoplesArray[i].profilePic}" alt="photo ${peoplesArray[i].firstName} ${peoplesArray[i].familyName}">
                         </div>
                         <div class="col-12 col-md-6">
                             <div>
                                 <p class="souligne">Son parcours</p>
-                                <p>${teachers[i].career}</p>
+                                <p>${peoplesArray[i].career}</p>
                             </div>
                             <div>
                                 <p class="souligne">Une anecdote</p>
-                                <p>${teachers[i].about}
+                                <p>${peoplesArray[i].about}
                                 </p>
                             </div>
                         </div>
@@ -216,14 +216,14 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                 <div class="container">
                     <div class="modal-footer justify-content-center">
                         <div class="col imagebox">
-                            <a href="${teachers[i].linkedinLink}"
+                            <a href="${peoplesArray[i].linkedinLink}"
                                 target="_blank">
                                 <img class="img-fluid rounded-circle"
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
                                     alt="Responsive image"></a>
                         </div>
-                        <div class="col imagebox">
-                            <a href="${teachers[i].emailLink}" target="_blank">
+                        <div class="col imagebox envelope">
+                        <input class="emailaddress" value="${peoplesArray[i].emailLink}" style="display: none;">
                                 <img class="img-fluid"
                                     src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
                                     alt="Responsive image"></a>
@@ -234,12 +234,12 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
         </div>
     </div>
     <div>
-        <img src="${teachers[i].profilePic}" class="card-img-top rounded-circle test modimg"
-            alt="${teachers[i].firstName} ${teachers[i].familyName}">
+        <img src="${peoplesArray[i].profilePic}" class="card-img-top rounded-circle test modimg"
+            alt="${peoplesArray[i].firstName} ${peoplesArray[i].familyName}">
     </div>
     <div class="card-body border-0">
-        <h5 class="card-title font-weight-bold">${teachers[i].firstName} <br />${teachers[i].familyName}</h5>
-        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${teachers[i].firstName}${teachers[i].familyName}Modal">Voir le
+        <h5 class="card-title font-weight-bold">${peoplesArray[i].firstName} <br />${peoplesArray[i].familyName}</h5>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${peoplesArray[i].firstName}${peoplesArray[i].familyName}Modal">Voir le
             profil</a>
     </div>
 </article>`
@@ -247,152 +247,26 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
     teachersElem.innerHTML = cardTeachers;
 }
 
-/*
-//Get the element with wilders id
-const wildersElem = document.getElementById('wilders')
-//Define loop for wilders cards
-let cardWilders = ""
-for (i = 0; i < wilders.length; i++){
-    cardWilders += ` <article class="col-12 col-md-4"><div class="modal fade" id="${wilders[i].firstName}${wilders[i].familyName}Modal" tabindex="-1" role="dialog"
-    aria-labelledby="${wilders[i].firstName}${wilders[i].familyName}ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center w-100" id="${wilders[i].firstName}${wilders[i].familyName}ModalLabel">${wilders[i].firstName} ${wilders[i].familyName}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modale">
-                <div class="modal-body row justify-content-center align-items-center">
-                    <div class="col-12 col-md-6">
-                        <img class="w-100 rounded-circle modimg"
-                            src="${wilders[i].profilePic}" alt="photo ${wilders[i].firstName} ${wilders[i].familyName}">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <p class="souligne">Quelques mots de notre wilder</p>
-                        <p class="text-justify">${wilders[i].fewWords}</p>
-                        <div>
-                            <p class="souligne">Langages de programmation</p>
-                            <p>${wilders[i].languages}</p>
-                        </div>
-                        <div>
-                            <p class="souligne">Soft Skills</p>
-                            <p>${wilders[i].softSkills}</p>
-                        </div>
-                        <div>
-                            <p class="souligne">Mobilité professionnelle</p>
-                            <p>${wilders[i].mobility}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-footer justify-content-center">
-                    <div class="col imagebox">
-                        <a href="${wilders[i].linkedinLink}"
-                            target="_blank">
-                            <img class="img-fluid rounded-circle"
-                                src="https://i.imgur.com/JFjk02U.png"
-                                alt="Logo LinkedIn"></a>
-                    </div>
-                    <div class="col imagebox">
-                        <a href="${wilders[i].githubLink}" target="_blank">
-                            <img class="img-fluid rounded-circle"
-                                src="https://i.imgur.com/f46V8rb.png"
-                                alt="logo GitHub"></a>
-                    </div>
-                    <div class="col imagebox">
-                        <a href="${wilders[i].emailLink}" target="_blank">
-                            <img class="img-fluid"
-                                src="https://i.imgur.com/gKdLQvr.png"
-                                alt="Logo enveloppe"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><div>
-            <img src="${wilders[i].profilePic}" class="card-img-top rounded-circle test modimg"
-                alt="photo ${wilders[i].firstName} ${wilders[i].familyName}">
-        </div>
-        <div class="card-body border-0">
-            <h5 class="card-title font-weight-bold">${wilders[i].firstName} <br />${wilders[i].familyName}</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${wilders[i].firstName}${wilders[i].familyName}Modal">Voir le
-                profil</a>
-        </div></article>` 
-    }
 
-wildersElem.innerHTML = cardWilders;
-
-//Get the element with teachers id
-const teachersElem = document.getElementById('teachers')
-//Define loop for teachers cards
-let cardTeachers = ""
-for (i = 0; i < teachers.length; i++) {
-    cardTeachers += `<article class="col-12 col-md-4">
-    <div class="modal fade" id="${teachers[i].firstName}${teachers[i].familyName}Modal" tabindex="-1" role="dialog"
-        aria-labelledby="${teachers[i].firstName}${teachers[i].familyName}ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center w-100" id="${teachers[i].firstName}${teachers[i].familyName}ModalLabel">${teachers[i].firstName} ${teachers[i].familyName}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modale">
-                    <div class="modal-body row justify-content-center align-items-center">
-                        <div class="col-12 col-md-6">
-                            <img class="w-100 rounded-circle modimg"
-                                src="${teachers[i].profilePic}" alt="photo ${teachers[i].firstName} ${teachers[i].familyName}">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div>
-                                <p class="souligne">Son parcours</p>
-                                <p>${teachers[i].career}</p>
-                            </div>
-                            <div>
-                                <p class="souligne">Une anecdote</p>
-                                <p>${teachers[i].about}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="modal-footer justify-content-center">
-                        <div class="col imagebox">
-                            <a href="${teachers[i].linkedinLink}"
-                                target="_blank">
-                                <img class="img-fluid rounded-circle"
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0m7yXW45tMa1MmBfOm904CyHUrPYTK8BZufKdA5O4NtvvSui"
-                                    alt="Responsive image"></a>
-                        </div>
-                        <div class="col imagebox">
-                            <a href="${teachers[i].emailLink}" target="_blank">
-                                <img class="img-fluid"
-                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
-                                    alt="Responsive image"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <img src="${teachers[i].profilePic}" class="card-img-top rounded-circle test modimg"
-            alt="${teachers[i].firstName} ${teachers[i].familyName}">
-    </div>
-    <div class="card-body border-0">
-        <h5 class="card-title font-weight-bold">${teachers[i].firstName} <br />${teachers[i].familyName}</h5>
-        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#${teachers[i].firstName}${teachers[i].familyName}Modal">Voir le
-            profil</a>
-    </div>
-</article>`
-}
-teachersElem.innerHTML = cardTeachers;
-*/
 
 peoplesWildersCard('wilders', wilders)
 peopleTeachersCard('teachers', teachers)
+
+const copie = () => {
+    console.log('test copie')
+    const emailAd = document.getElementsByClassName('emailaddress')
+    for (let j = 0; j < emailAd.length; j++) {
+        emailAd[i].select()
+        document.execCommand('copy')
+    }
+}
+
+const imgEmailElems = document.getElementsByClassName('envelope');
+for (let i = 0; i < imgEmailElems.length; i++) {
+    console.log(imgEmailElems)
+    imgEmailElems[i].addEventListener("click", () => {
+        console.log("clicked")
+        copie()
+
+    })
+}
