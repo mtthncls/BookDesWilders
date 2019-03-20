@@ -10,7 +10,7 @@ const wilders = [{
         mobility: "Prêt à prendre le train tous les jours si nécessaire. Disponibilité jusque Paris.",
         linkedinLink: "https://www.linkedin.com/in/axel-chandelier-6a6079181/",
         githubLink: "https://github.com/Spartakyste",
-        emailLink: "axeletcana@hotmail.fr"
+        emailLink: "chandelieraxel0@gmail.com"
     },
 
     {
@@ -155,10 +155,11 @@ const peoplesWildersCard = (peoplesType, peoplesArray) => {
                                     alt="logo GitHub"></a>
                         </div>
                         <div class="col imagebox envelope">
-                        <input class="emailaddress" value="${peoplesArray[i].emailLink}" style="display: none;">
+                        <p class="infobulle">Cliquez pour copier l'email</p>
+                        <input class="emailaddress" value="${peoplesArray[i].emailLink}">
                                 <img class="img-fluid"
                                     src="https://i.imgur.com/gKdLQvr.png"
-                                    alt="Logo enveloppe"></a>
+                                    alt="Logo enveloppe">
                         </div>
                     </div>
                 </div>
@@ -203,11 +204,11 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                         <div class="col-12 col-md-6">
                             <div>
                                 <p class="souligne">Son parcours</p>
-                                <p>${peoplesArray[i].career}</p>
+                                <p class="text-justify">${peoplesArray[i].career}</p>
                             </div>
                             <div>
                                 <p class="souligne">Une anecdote</p>
-                                <p>${peoplesArray[i].about}
+                                <p class="text-justify">${peoplesArray[i].about}
                                 </p>
                             </div>
                         </div>
@@ -223,10 +224,10 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                                     alt="Responsive image"></a>
                         </div>
                         <div class="col imagebox envelope">
-                        <input class="emailaddress" value="${peoplesArray[i].emailLink}" style="display: none;">
+                        <input class="emailaddress" value="${peoplesArray[i].emailLink}">
                                 <img class="img-fluid"
                                     src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
-                                    alt="Responsive image"></a>
+                                    alt="Responsive image">
                         </div>
                     </div>
                 </div>
@@ -247,26 +248,20 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
     teachersElem.innerHTML = cardTeachers;
 }
 
-
-
 peoplesWildersCard('wilders', wilders)
 peopleTeachersCard('teachers', teachers)
 
-const copie = () => {
-    console.log('test copie')
-    const emailAd = document.getElementsByClassName('emailaddress')
-    for (let j = 0; j < emailAd.length; j++) {
-        emailAd[i].select()
-        document.execCommand('copy')
-    }
-}
 
-const imgEmailElems = document.getElementsByClassName('envelope');
-for (let i = 0; i < imgEmailElems.length; i++) {
-    console.log(imgEmailElems)
-    imgEmailElems[i].addEventListener("click", () => {
-        console.log("clicked")
-        copie()
+const emailElems = document.getElementsByClassName('envelope');
+const inputEmailElems = document.getElementsByClassName('emailaddress');
+for (let i = 0; i < emailElems.length; i++) {
+    console.log(emailElems)
+    emailElems[i].addEventListener("click", (e) => {
+        e.preventDefault()
+        console.log(i)
+        console.log(inputEmailElems[i])
+        inputEmailElems[i].select()
+        document.execCommand("copy")
 
     })
 }
