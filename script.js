@@ -224,6 +224,7 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                                     alt="Responsive image"></a>
                         </div>
                         <div class="col imagebox envelope">
+                        <p class="infobulle">Cliquez pour copier l'email</p>
                         <input class="emailaddress" value="${peoplesArray[i].emailLink}">
                                 <img class="img-fluid"
                                     src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
