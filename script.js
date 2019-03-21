@@ -105,7 +105,8 @@ const peoplesWildersCard = (peoplesType, peoplesArray) => {
     //Define loop for wilders cards
     let cardWildersPeoples = ""
     for (i = 0; i < peoplesArray.length; i++) {
-        cardWildersPeoples += ` <article class="col-12 col-md-4"><div class="modal fade" id="${peoplesArray[i].firstName}${peoplesArray[i].familyName}Modal" tabindex="-1" role="dialog"
+        cardWildersPeoples += ` <article class="col-12 col-md-4">
+        <div class="modal fade" id="${peoplesArray[i].firstName}${peoplesArray[i].familyName}Modal" tabindex="-1" role="dialog"
         aria-labelledby="${peoplesArray[i].firstName}${peoplesArray[i].familyName}ModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -157,7 +158,7 @@ const peoplesWildersCard = (peoplesType, peoplesArray) => {
                         <div class="col imagebox envelope">
                         <p class="infobulle">Cliquez pour copier l'email</p>
                         <input class="emailaddress" value="${peoplesArray[i].emailLink}">
-                                <img class="img-fluid"
+                                <img class="img-fluid cursorhand"
                                     src="https://i.imgur.com/gKdLQvr.png"
                                     alt="Logo enveloppe">
                         </div>
@@ -226,7 +227,7 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                         <div class="col imagebox envelope">
                         <p class="infobulle">Cliquez pour copier l'email</p>
                         <input class="emailaddress" value="${peoplesArray[i].emailLink}">
-                                <img class="img-fluid"
+                                <img class="img-fluid cursorhand"
                                     src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
                                     alt="Responsive image">
                         </div>
@@ -259,8 +260,6 @@ for (let i = 0; i < emailElems.length; i++) {
     console.log(emailElems)
     emailElems[i].addEventListener("click", (e) => {
         e.preventDefault()
-        console.log(i)
-        console.log(inputEmailElems[i])
         inputEmailElems[i].select()
         document.execCommand("copy")
 

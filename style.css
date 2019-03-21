@@ -56,7 +56,7 @@ section {
 .bouton {
 
     color: #FF8A8E;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #F2EFEF;
     border: solid 2px #FF8A8E;
     font-size: 2em;
@@ -151,4 +151,8 @@ footer {
     background-color: #FF8A8E;
     border-radius: 5px;
     display: block;
+}
+
+.cursorhand:hover {
+    cursor: pointer;
 }
