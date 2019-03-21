@@ -1,5 +1,3 @@
-console.log("test fonctionnement js");
-
 const wilders = [{
         firstName: "Axel",
         familyName: "CHANDELIER",
@@ -257,7 +255,6 @@ peopleTeachersCard('teachers', teachers)
 const emailElems = document.getElementsByClassName('envelope');
 const inputEmailElems = document.getElementsByClassName('emailaddress');
 for (let i = 0; i < emailElems.length; i++) {
-    console.log(emailElems)
     emailElems[i].addEventListener("click", (e) => {
         e.preventDefault()
         inputEmailElems[i].select()
