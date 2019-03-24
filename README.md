@@ -1,7 +1,7 @@
-# BookDesWilders
+# Book Des Wilders
 WildCodeSchool Feb 2019 Javascript Promo Directory
 
-"BOOK des Wilders"
+"Book des Wilders"
 
 First project @WildCodeSchool Feb 19 Javascript cursus.
  
