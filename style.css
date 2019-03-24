@@ -18,11 +18,13 @@ section {
 .display-4 {
     margin-top: 35px;
     color: #EC6D6A;
+    font-weight: bold;
 }
 
 .lead {
     margin-top: 30px;
     color: #EC6D6A;
+    font-weight: bold;
 }
 
 .intertitre {
@@ -152,4 +154,14 @@ footer {
 
 .cursorhand:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .envelope {
+        display: none;
+    }
+
+    .envelope:hover .infobulle {
+        display: none;
+    }
 }
