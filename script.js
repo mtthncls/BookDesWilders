@@ -226,7 +226,7 @@ const peopleTeachersCard = (peoplesType, peoplesArray) => {
                         <p class="infobulle">Cliquez pour copier l'email</p>
                         <input class="emailaddress" value="${peoplesArray[i].emailLink}">
                                 <img class="img-fluid cursorhand"
-                                    src="http://www.cril54.org/wp-content/uploads/2018/04/enveloppe-mail.png"
+                                    src="https://i.imgur.com/gKdLQvr.png"
                                     alt="Responsive image">
                         </div>
                     </div>
