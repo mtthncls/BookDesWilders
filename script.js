@@ -32,7 +32,7 @@ const wilders = [{
         languages: "Javascript React Node.js HTML5.0 CSS3.0",
         softSkills: "Gestion de Projet, Autonomie, Curiosité.",
         mobility: "Région Parisienne, Région Grand Est",
-        linkedinLink: "https://www.linkedin.com/in/figueiredo-figueiredo-37200676/",
+        linkedinLink: "https://www.linkedin.com/in/jeremy-figueiredo/",
         githubLink: "https://github.com/0figueiredo",
         emailLink: "figueiredojeremy@gmail.com"
     },
