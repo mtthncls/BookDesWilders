@@ -255,7 +255,7 @@ peopleTeachersCard('teachers', teachers)
 const emailElems = document.getElementsByClassName('envelope');
 const inputEmailElems = document.getElementsByClassName('emailaddress');
 for (let i = 0; i < emailElems.length; i++) {
-    emailElems[i].addEventListener("click", (e) => {
+    emailElems[i].addEventListener("click touchstart", (e) => {
         e.preventDefault()
         inputEmailElems[i].select()
         document.execCommand("copy")
